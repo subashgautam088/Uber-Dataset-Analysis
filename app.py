@@ -4,9 +4,9 @@ import joblib
 import pickle
 
 # Load model
-model = joblib.load('model.pkl')
+model = joblib.load('model\model.pkl')
 
-with open('label_encoder.pkl', 'rb') as f:
+with open('model\label_encoder.pkl', 'rb') as f:
     le_pipeline = pickle.load(f)
 
 st.title("Uber Booking Status Prediction")
